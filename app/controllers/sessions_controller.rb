@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     client_cert = OpenSSL::X509::Certificate.new(
       ENV['APPLE_PAY_MERCHANT_IDENTITY_CERT']
     )
-    private_key = OpenSSL::PKey::RSA:.new(
+    private_key = OpenSSL::PKey::RSA.new(
       ENV['APPLE_PAY_MERCHANT_IDENTITY_PRIVATE_KEY']
     )
 
