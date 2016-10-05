@@ -9,7 +9,7 @@ class TransactionsController < ApplicationController
       amount: params[:amount],
       payment_method_nonce: params[:nonce],
       options: {
-        submit_for_settlement: true
+        submit_for_settlement: false
       }
     )
     render json: {
