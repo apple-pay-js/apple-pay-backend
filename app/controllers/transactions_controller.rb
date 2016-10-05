@@ -12,6 +12,8 @@ class TransactionsController < ApplicationController
         submit_for_settlement: true
       }
     )
-    render json: result
+    render json: {
+      status: result.status
+    }
   end
 end
