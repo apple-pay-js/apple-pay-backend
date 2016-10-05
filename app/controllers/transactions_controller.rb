@@ -13,7 +13,7 @@ class TransactionsController < ApplicationController
       }
     )
     render json: {
-      status: result.status
+      status: result.transaction.status
     }
   end
 end
